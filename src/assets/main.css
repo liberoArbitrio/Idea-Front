@@ -1,0 +1,202 @@
+@import 'tailwindcss';
+
+@theme {
+  /* === 颜色 === */
+  --color-background: #131410;
+  --color-surface: #131410;
+  --color-primary: #c9c6c5;
+  --color-secondary: #e4c285;
+  --color-tertiary: #d8c594;
+  --color-error: #ffb4ab;
+  --color-charcoal: #4a4a4a;
+  --color-outline: #8e9192;
+  --color-surface-tint: #c9c6c5;
+  --color-surface-bright: #393936;
+  --color-surface-dim: #131410;
+  --color-surface-variant: #353531;
+  --color-surface-container: #1f201c;
+  --color-surface-container-low: #1b1c18;
+  --color-surface-container-lowest: #0e0f0b;
+  --color-surface-container-high: #2a2a27;
+  --color-surface-container-highest: #353531;
+  --color-primary-container: #0a0a0a;
+  --color-secondary-container: #5d4514;
+  --color-tertiary-container: #0e0900;
+  --color-error-container: #93000a;
+  --color-primary-fixed: #e5e2e1;
+  --color-primary-fixed-dim: #c9c6c5;
+  --color-secondary-fixed: #ffdea4;
+  --color-secondary-fixed-dim: #e4c285;
+  --color-tertiary-fixed: #f5e1ae;
+  --color-tertiary-fixed-dim: #d8c594;
+  --color-on-surface: #e4e2dd;
+  --color-on-background: #e4e2dd;
+  --color-on-primary: #313030;
+  --color-on-secondary: #412d00;
+  --color-on-tertiary: #3a2f0b;
+  --color-on-error: #690005;
+  --color-on-surface-variant: #c4c7c7;
+  --color-on-primary-container: #7b7979;
+  --color-on-secondary-container: #d5b478;
+  --color-on-tertiary-container: #87784d;
+  --color-on-error-container: #ffdad6;
+  --color-on-primary-fixed: #1c1b1b;
+  --color-on-primary-fixed-variant: #474646;
+  --color-on-secondary-fixed: #261900;
+  --color-on-secondary-fixed-variant: #5a4312;
+  --color-on-tertiary-fixed: #231b00;
+  --color-on-tertiary-fixed-variant: #524620;
+  --color-inverse-surface: #e4e2dd;
+  --color-inverse-primary: #5f5e5e;
+  --color-inverse-on-surface: #30312d;
+  --color-outline-variant: #444748;
+  --color-midnight-gray: #2a2a2a;
+  --color-ink-jade: #1a1a1a;
+  --color-lead-gray: #8a8a8a;
+
+  /* === 字体 === */
+  --font-display-hero: 'Playfair Display', serif;
+  --font-headline-lg: 'Playfair Display', serif;
+  --font-headline-md: 'Playfair Display', serif;
+  --font-body-lg: 'Inter', sans-serif;
+  --font-body-md: 'Inter', sans-serif;
+  --font-label-sm: 'Inter', sans-serif;
+  --font-label-xs: 'Inter', sans-serif;
+  --font-quote-italic: 'EB Garamond', serif;
+
+  /* === 字号 === */
+  --text-headline-lg: 2.5rem;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-md: 1.5rem;
+  --text-headline-md--line-height: 1.3;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.6;
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.5;
+  --text-label-sm: 0.875rem;
+  --text-label-sm--line-height: 1.4;
+  --text-label-xs: 0.75rem;
+  --text-label-xs--line-height: 1.4;
+
+  /* === 间距 === */
+  --spacing-unit: 0.5rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-margin-desktop: 5rem;
+  --spacing-container-max: 90rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-section-gap: 10rem;
+  --spacing-sg-gutter: 2rem;
+
+  /* === SignUp 页面专属 === */
+  --color-sg-deep-charcoal: #0a0a0a;
+  --color-sg-architectural-gray: #7d7d7d;
+  --color-sg-bronze-mute: #4d4230;
+  --color-sg-pure-white: #ffffff;
+  --color-sg-gold: #f2ca50;
+  --color-sg-gold-container: #d4af37;
+  --color-sg-on-gold: #3c2f00;
+  --color-sg-on-gold-container: #554300;
+  --color-sg-surface-dim: #121414;
+  --color-sg-surface-lowest: #0c0f0f;
+  --color-sg-surface-low: #1a1c1c;
+  --color-sg-surface: #121414;
+  --color-sg-surface-container: #1e2020;
+  --color-sg-surface-high: #282a2b;
+  --color-sg-surface-highest: #333535;
+  --color-sg-on-surface: #e2e2e2;
+  --color-sg-subtle: #99907c;
+
+  --font-sg-headline-xl: 'Libre Caslon Text', serif;
+  --font-sg-display-lg: 'Libre Caslon Text', serif;
+  --font-sg-headline-lg: 'Libre Caslon Text', serif;
+  --font-sg-label-caps: 'Hanken Grotesk', sans-serif;
+  --font-sg-body-lg: 'Hanken Grotesk', sans-serif;
+  --font-sg-body-md: 'Hanken Grotesk', sans-serif;
+
+  --text-sg-headline-xl: 48px;
+  --text-sg-headline-xl--line-height: 60px;
+  --text-sg-display-lg: 80px;
+  --text-sg-display-lg--line-height: 96px;
+  --text-sg-headline-lg: 32px;
+  --text-sg-headline-lg--line-height: 40px;
+  --text-sg-body-lg: 18px;
+  --text-sg-body-lg--line-height: 32px;
+  --text-sg-body-md: 16px;
+  --text-sg-body-md--line-height: 28px;
+  --text-sg-label-caps: 12px;
+  --text-sg-label-caps--line-height: 16px;
+}
+
+/* === 移动端间距覆写 === */
+@media (max-width: 767px) {
+  :root {
+    --spacing-margin-desktop: 1.25rem;
+    --spacing-section-gap: 5rem;
+  }
+}
+
+/* === 全局基础样式 === */
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  overflow-x: hidden;
+}
+
+/* === 自定义工具类 === */
+.glass-nav {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.glass-morphism {
+  background: rgb(255 255 255 / 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(228 194 133 / 0.1);
+}
+
+.micro-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.04;
+  z-index: 9999;
+}
+
+.gold-glow {
+  filter: drop-shadow(0 0 15px rgb(228 194 133 / 0.4));
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #e4c285 0%, #ffdea4 50%, #d5b478 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-divider {
+  height: 0.5px;
+  background: linear-gradient(90deg, transparent, rgb(228 194 133 / 0.3), transparent);
+}
+
+.radial-bloom {
+  background: radial-gradient(circle at center, rgb(228 194 133 / 0.08) 0%, transparent 70%);
+}
+
+.luxury-hover {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgb(228 194 133 / 0.15);
+}
+
+/* === 下拉菜单 === */
+.nav-dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
