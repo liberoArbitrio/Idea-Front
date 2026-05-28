@@ -135,6 +135,17 @@
   }
 }
 
+/* === 全局选中样式 === */
+::selection {
+  background: #e4c285;
+  color: #000;
+}
+
+::-moz-selection {
+  background: #e4c285;
+  color: #000;
+}
+
 /* === 全局基础样式 === */
 body {
   background-color: var(--color-background);

@@ -15,20 +15,16 @@
 
       <!-- 获奖作品 -->
       <div class="nav-item relative group py-2">
-        <button
+        <router-link to="/winners"
           class="flex items-center gap-1 font-label-sm text-base uppercase tracking-widest text-on-surface/80 hover:text-secondary transition-colors duration-300">
           获奖作品 <span class="material-symbols-outlined text-[16px]">expand_more</span>
-        </button>
+        </router-link>
         <div
           class="nav-dropdown absolute top-full left-1/2 -translate-x-1/2 w-48 bg-midnight-gray border border-secondary/20 shadow-2xl p-4 grid gap-3">
-          <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors"
-            href="#">第十四届</a>
-          <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors"
-            href="#">第十三届</a>
-          <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors"
-            href="#">第十二届</a>
-          <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors"
-            href="#">历届回顾</a>
+          <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors block">第十四届</router-link>
+          <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors block">第十三届</router-link>
+          <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors block">第十二届</router-link>
+          <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary transition-colors block">历届回顾</router-link>
         </div>
       </div>
 
@@ -117,10 +113,10 @@
             <span class="material-symbols-outlined text-[16px]">expand_more</span>
           </button>
           <div v-show="mobileDropdowns.awards" class="pb-3 pl-4 flex flex-col gap-2">
-            <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1" href="#">第十四届</a>
-            <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1" href="#">第十三届</a>
-            <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1" href="#">第十二届</a>
-            <a class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1" href="#">历届回顾</a>
+            <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1 block" @click="mobileOpen = false">第十四届</router-link>
+            <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1 block" @click="mobileOpen = false">第十三届</router-link>
+            <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1 block" @click="mobileOpen = false">第十二届</router-link>
+            <router-link to="/winners" class="text-sm uppercase tracking-widest text-on-surface/60 hover:text-secondary py-1 block" @click="mobileOpen = false">历届回顾</router-link>
           </div>
         </div>
 

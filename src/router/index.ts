@@ -14,6 +14,16 @@ const router = createRouter({
       name: 'signup',
       component: () => import('@/views/pages/SignUp.vue'),
     },
+    {
+      path: '/winners',
+      name: 'winners',
+      component: () => import('@/views/pages/WinnersArchive.vue'),
+    },
+    {
+      path: '/award/:id',
+      name: 'awardDetail',
+      component: () => import('@/views/pages/AwardDetail.vue'),
+    },
   ],
 })
 
