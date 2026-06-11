@@ -5,7 +5,7 @@
     <main class="pt-40">
       <!-- Hero Section -->
       <section class="max-w-container-max mx-auto px-margin-desktop mb-24 reveal-item">
-        <div class="w-20 h-[1px] bg-secondary mb-8"></div>
+        <div class="w-20 h-px bg-secondary mb-8"></div>
         <h1 class="font-display-hero text-[52px] md:text-[96px] text-on-surface mb-6 max-w-4xl">
           国际 <span class="text-secondary italic">学术</span> 委员会
         </h1>
@@ -23,13 +23,13 @@
             class="academic-card reveal-item group relative overflow-hidden bg-ink-jade gold-border"
             :style="{ transitionDelay: (idx + 1) * 100 + 'ms' }"
           >
-            <div class="aspect-[3/4] overflow-hidden relative">
+            <div class="aspect-3/4 overflow-hidden relative">
               <img
                 :alt="'Portrait of ' + member.name"
                 class="w-full h-full object-cover"
                 :src="member.image"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+              <div class="absolute inset-0 bg-linear-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
             </div>
             <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
               <h3 class="font-headline-md text-[32px] text-secondary mb-2">{{ member.name }}</h3>
@@ -49,6 +49,12 @@
 import { onMounted } from 'vue'
 import NavBar from '@/views/components/NavBar.vue'
 import FooterSection from '@/views/components/FooterSection.vue'
+import imgA from '@/assets/a.png'
+import imgB from '@/assets/b.png'
+import imgC from '@/assets/c.png'
+import imgD from '@/assets/d.png'
+import imgE from '@/assets/e.png'
+import imgF from '@/assets/f.png'
 
 defineOptions({ name: 'InterCouncil' })
 
@@ -56,32 +62,32 @@ const members = [
   {
     name: '郑时龄',
     title: '中国科学院院士',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKZwuhfVHRmPePg-r9QgGNZDGfvpXH7nU8qmveb-SiET50uv1de2rdL1e7LWkGXV7HbWD9aE_jZNSkFNrPkuJQm5RbnQ2CU9rZjp2wLLE-OVwzGyEB9GjvYVzE3QWcfhu4G3IllL45LpN_XgkhrekXZxCQHYduAm87CauaoaSbkPFbNEYRErts6WAKoixs6ChvuKE8mJxLXQj0mBTplaSl1k2P26KYZ9XrmxnqMF2DJkXovbQOteXi1RsTsKvMbVHKYN4KkrIuvEs',
+    image: imgA,
   },
   {
     name: '鲁晓波',
     title: '清华大学美术学院院长',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCQ0yZHZqWNTVMT7ANGZSCjol0VAVSjYTUvTCPWOk7UWHV4o8TReahmzY1-O-GVqURCG33R7nM9P4n6EAgdLEVQ8iSwSAuf2AnMXL52s9Lo5Xq2px6UAYyFmKMQPX4OtC2CQytcqVZ6jUyuFJ_lo5rvYtOHTYvhiaOw_EUCoNQ3h_YEZkwHuzes8SfOvBc2Y2YdZ3lTEL5lTk35qfPRDc1D-jgA-yAJbhMOI8S-PO4DFDLOQv8Z3X5BWncY-NxxL0yZGlaZU2etBVw',
+    image: imgB,
   },
   {
     name: 'M. Fuksas',
     title: 'Fuksas 工作室创始人，意大利著名建筑师',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAAHjLFwakCoR4omqv3muq9iwzVzfEXm0MPH9Zw_B6g0Pt9_lU892SidysPuByT3V70M7vpW9ZJtpYfwoyyJH7crz5is9k7bx8C_Cz4S5ghnkjS87U_Q5lIJUr1LCXsKslT_fFTpCL7-kakFimbr9oyV4hKpxQR1N-2eLmpbFmoFuO7lEqsON8RdN0zdl9Dio_ilPEwS3781NEjYvb-i4cIPqAVsO3NaxlLTal3umoilPdXXloaU6uksq7zaOObzoDUYnUbHNkWB6Q',
+    image: imgC,
   },
   {
     name: '矶崎新',
     title: '普利兹克建筑奖得主',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD3at3Es2Jf2lXhifdAJuQbrqyUYR41XukYz9dBppR-ekTQOArLl06lfjFhuvP3VI8HBZCiWEFtTYOlbi7SAqa_H76WkhSETGL6nJcN2W1OMNdQzq6FMkRwjwGD0YuYLPJVm8qt3IpVjgYmWeBTnjc--2wHBKj44qVj8R0N3cNa1ggvF_LFwR4Zh6EmfS94dNhovKzWGslkJ6obUoHYEdIm8dVLWHzEFTJItmphkAyxWmLXjSzFmE5cPW6biUci_Ar6odejbul88Bw',
+    image: imgD,
   },
   {
     name: '远见学者',
     title: '国际荣誉顾问',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAjNRO722Z6_-3PuiYEIOtjlKMH_XFWIDLPqWjPjhnnYTjuaMX9H7ssO2Vl34PhTsl9KFUoUIb2sRIWj4Ew6F_pIioyIfEJ8jG2GdLIerIUY76Ik5O0uUxvC5tbK_OyLziADBE4L_8L0UOWDcqeMSGLlKp7tdfB2vtJpK_iT8mg-P7qSzW3bpI-372hSP47qukeIHvsGbcyM4ZsJaYC4uQGxvkyYMywqxsTD3SjT0leJZCrXoFbqvM8ceP_lCVgcqkfmO1GKCtAZlo',
+    image: imgE,
   },
   {
     name: 'Kenneth Frampton',
     title: '哥伦比亚大学建筑学教授',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBHfljrJCULUbKpf72uJhZo2KH0IdFj22nfGIOR7M-ExLJZU396qNK-R6SHYWdQlQapg_T6TcAHWVklSNmrgBHs0KtGpiDtXj-AVwDcCrZzB5wQGHvqLtnr_KMoqueXlZSGYWes_09sbmdhDZ_G13W5vIvZgzp7dsyrqh2FNLG4Ci9b3YbmQkVlvtO_h1y-23kwm7qRRXc5EDiEFKHK36rXWQczHHskZa_2BWskSrV953OIgviCxVUtoJCH6K_44q7Dk2YoO0NHdgE',
+    image: imgF,
   },
 ]
 

@@ -15,15 +15,18 @@
         </p>
         <div class="grid grid-cols-3 gap-8 border-t border-white/10 pt-12">
           <div>
-            <div ref="count75" class="font-display-hero text-headline-lg gold-gradient-text mb-2 count-up" data-target="75">0</div>
+            <div ref="count75" class="font-display-hero text-headline-lg gold-gradient-text mb-2 count-up"
+              data-target="75">0</div>
             <div class="font-label-xs text-label-xs text-lead-gray uppercase tracking-widest">Countries</div>
           </div>
           <div>
-            <div ref="count7026" class="font-display-hero text-headline-lg gold-gradient-text mb-2 count-up" data-target="7026">0</div>
+            <div ref="count7026" class="font-display-hero text-headline-lg gold-gradient-text mb-2 count-up"
+              data-target="7026">0</div>
             <div class="font-label-xs text-label-xs text-lead-gray uppercase tracking-widest">Works</div>
           </div>
           <div>
-            <div ref="count24" class="font-display-hero text-headline-lg gold-gradient-text mb-2 count-up" data-target="24">0</div>
+            <div ref="count24" class="font-display-hero text-headline-lg gold-gradient-text mb-2 count-up"
+              data-target="24">0</div>
             <div class="font-label-xs text-label-xs text-lead-gray uppercase tracking-widest">Fields</div>
           </div>
         </div>
@@ -31,12 +34,12 @@
 
       <!-- Right: Image -->
       <div ref="rightRef" class="relative group stagger-in order-1 lg:order-2 mb-8 lg:mb-0">
-        <div class="absolute -inset-6 border-[0.5px] border-secondary/20 group-hover:border-secondary transition-all duration-700"></div>
+        <div
+          class="absolute -inset-6 border-[0.5px] border-secondary/20 group-hover:border-secondary transition-all duration-700">
+        </div>
         <div class="overflow-hidden luxury-hover">
-          <img
-            class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9RaSN15WetdtxXR1aaTwdz3IwSWxYmQ72BsHtXX_3XBqLMQArFeaEm0mRMKgcnpPQPE6Vy2zVBQq7BmkeJDPRJCDoQreO6k2KP431yHTENclZ1VY9i-lX2yvi0Ywk_B_PXe0JJy5Ydmx_dwyTJrHI_EgfwQHkIvK1FH7REF9BfOC_YdZSmiHahJoa53e3TrkeUe9vlepy7c8WM_zIptQ7euI22Ogl7JB_5TiUdiKK9IqTqeSrhGOv9K8L_CKClPslS4JuNZQq6IM"
-          />
+          <img class="w-full aspect-4/5 object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+            :src="img4" />
         </div>
       </div>
     </div>
@@ -45,6 +48,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import img4 from '@/assets/2.png'
 
 defineOptions({ name: 'AboutSection' })
 

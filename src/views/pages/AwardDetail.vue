@@ -5,7 +5,7 @@
     <!-- Hero Header -->
     <section class="relative h-screen w-full flex items-end overflow-hidden" id="hero">
       <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url(https://lh3.googleusercontent.com/aida/ADBb0uhB98JeMaPoSJ7tAxdeS1BEeAT2UIqJh9tsh9IbMLylDqmxCje2FxIYhCufzHGlNW-I_YUEGA-NxziWq0mse-oUVQkMQmV0ab8aKVKGEM22BJeIDXO4CQAbEi5czaqDvUDTyTUjF53Ynjm7hWdlFtqbQBHooOrCcxoC5QXRjhFUeADB61tjRGeIUMgcwns-IWBkxWyE2aPPiu0lzVJQD1MqrMgYwIVN4Y2KwUBsJxYU9HdJwbO7MMPhIRw)" />
+        :style="{ backgroundImage: `url(${heroBgImg})` }" />
       <div class="relative z-20 max-w-container-max mx-auto px-margin-desktop w-full pb-32">
         <div class="mb-10 flex items-center gap-6">
           <span class="w-16 h-px bg-secondary"></span>
@@ -55,14 +55,12 @@
         class="max-w-container-max mx-auto px-margin-desktop relative min-h-[900px] flex items-center section-reveal">
         <!-- Main Large Image (Bleeds across) -->
         <div class="absolute top-0 right-0 w-3/4 h-[800px] z-0 overflow-hidden rounded-lg hidden md:block">
-          <img alt="Architectural Detail" class="w-full h-full object-cover opacity-60"
-            src="https://lh3.googleusercontent.com/aida/ADBb0uhEDlYAPBJNu-RhjmzqX8j0U3YuEnsAnGZfxjxxJGOQyTFWo-q5VBdHoF6A-9plUT5ZeIv9C-QNR12QleJa4xD4A5nGXxZHVugBuj4PDOB7wLrlY016IhCo0LdEfCSqXjX99tOLIH4NLagLY8pREG8OEznh7Fmrv3pfYEycOzewOXCRZa62QcVEPpav5q450lGJM8SEhWtQ-fH9A4ucTQgSCtooBvOdWMfEAB079IHOVoKTaNoPkiAmZcI" />
+          <img alt="Architectural Detail" class="w-full h-full object-cover opacity-60" :src="imgG2" />
         </div>
         <!-- Secondary Detail Image (Overlapping) -->
         <div
           class="absolute bottom-20 right-[15%] w-1/4 h-[400px] z-20 border-8 border-surface shadow-2xl overflow-hidden rounded-lg hidden md:block">
-          <img alt="Material Detail" class="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida/ADBb0ujuhYSTCB-Mi9yB-97tixTCBTE85x6mUx7e-ZTf7EX7DTD-lyV5jP17xRKRQY4LhFQq_4Wz6_OdFxDMt9ye4DFtQOlHxa_y4KLB8TZEqhJrltWneZRTA9FQWqDSkDgWgP6aVaiwnbtPKlFsiyp2Pwc-shsFIjYlILb6ZGsLcgOgpW-_ZFMLLQgFEOYC-FRvj4GCNUiqQ7NA6X7PRzS_CXpTciYC7homoDnS47nA5URWdau4SHqcn-LTLqw" />
+          <img alt="Material Detail" class="w-full h-full object-cover" :src="imgG3" />
         </div>
         <!-- Floating Content Box with Glassmorphism -->
         <div class="relative z-30 max-w-2xl bg-surface/40 backdrop-blur-xl p-10 md:p-16 border-l border-secondary/30">
@@ -118,7 +116,7 @@
             <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-all duration-700 z-10"></div>
             <img alt="Cultural center exterior"
               class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ug8MIDyKjwLl2wu9BjYlfEFQh6SboLYlzONLqqx3y5rxnsjNMJSgva72YisaO4DvxOEIA0CcBenAv5J00y71mOlHJm81W1M4QkqO26n073c66aS1iurt1641hRYk0OEIOU7xEsyu5ywzgv11rsdKiJ1P6v2p8Gvp4YoAqcDLfMH5bicHg5pXSi1SFo-kTwOFK5XK2Fyw3hQIgwpt1Kar9qGPW3r-Ks0DXmPZ9E278AuuzUWRLs-obfpaLc" />
+              :src="imgG4" />
             <div
               class="absolute bottom-10 left-10 z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
               <span
@@ -130,7 +128,7 @@
             <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-all duration-700 z-10"></div>
             <img alt="Boutique interior detail"
               class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ujuhYSTCB-Mi9yB-97tixTCBTE85x6mUx7e-ZTf7EX7DTD-lyV5jP17xRKRQY4LhFQq_4Wz6_OdFxDMt9ye4DFtQOlHxa_y4KLB8TZEqhJrltWneZRTA9FQWqDSkDgWgP6aVaiwnbtPKlFsiyp2Pwc-shsFIjYlILb6ZGsLcgOgpW-_ZFMLLQgFEOYC-FRvj4GCNUiqQ7NA6X7PRzS_CXpTciYC7homoDnS47nA5URWdau4SHqcn-LTLqw" />
+              :src="imgG5" />
             <div
               class="absolute bottom-10 left-10 z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
               <span
@@ -205,6 +203,11 @@
 import { ref, onMounted } from 'vue'
 import NavBar from '@/views/components/NavBar.vue'
 import FooterSection from '@/views/components/FooterSection.vue'
+import heroBgImg from '@/assets/屏幕截图 2026-03-16 151824.png'
+import imgG2 from '@/assets/2.png'
+import imgG3 from '@/assets/8.png'
+import imgG4 from '@/assets/10.png'
+import imgG5 from '@/assets/11.png'
 
 defineOptions({ name: 'AwardDetail' })
 
@@ -331,6 +334,7 @@ function startParticles() {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

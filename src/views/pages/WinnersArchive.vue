@@ -7,7 +7,7 @@
       <div class="absolute inset-0 bg-black/60 z-10"></div>
       <img
         class="absolute inset-0 w-full h-full object-cover"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGFPTq7qYLWd77AAJ3NSDjX-fTZ4mZ_Qi4C5tBsBdoC2gCigHYue6Fq_pGD24fXGnAcRzqQ8WV7SX-4JRpasfspcDQcn8BTQq7z5XI-02G3kzV7eCcgi3xOEVeQ4p1nb8D2xumNxWAeoxexqWf7Ay92hoXN7Zc3HKIqyqhDwt28prP9x0k2tfHSosHrF7agmuCM5QLNmrSPzv4fHdHKSy361r-hdbHrw-PnPE0-yf1UgGZgMKKCdbFEEU8CSMHenJivbDD2_nDGWU"
+        :src="heroBg"
       />
       <div class="relative z-20 text-center px-4 stagger-in">
         <span class="font-label-sm text-secondary/70 tracking-[0.3em] uppercase mb-4 block">国际空间设计大奖</span>
@@ -136,6 +136,11 @@
 import { ref, onMounted } from 'vue'
 import NavBar from '@/views/components/NavBar.vue'
 import FooterSection from '@/views/components/FooterSection.vue'
+import heroBg from '@/assets/5.png'
+import img6 from '@/assets/6.png'
+import img7 from '@/assets/7.png'
+import img8 from '@/assets/8.png'
+import img9 from '@/assets/9.png'
 
 defineOptions({ name: 'WinnersArchive' })
 
@@ -193,28 +198,28 @@ const winnerCards: WinnerCard[] = [
     award: '评审团大奖',
     title: '新光规划',
     location: '中国深圳 — 城市设计',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCrI_eg7m29MhItHQcDWVxVVJq7_dbHcEdlwXONJNk-0iS2wfOzsOhj8Am5rzSK8pl-d_Ai4qvpyHIGs4JZmXivS9hxs3bHvKNsByQPpdoWQD7DvIaH5IH3FdK5ZgwgnWEXPc4AJYsLvOJQXJQl6pL_coStDf2jbiJNaNN9Qu9GVDo3MZfEi7Ef0KJ87Hal3x3_XKs0F2N-btG_XXYAOPXC-LnP3YyJcu-0CTowDdQnYiUEoZkT0VJmAqY4sGMYxrP5RlTarA6piZA',
+    image: img6,
   },
   {
     id: '2',
     award: '卓越奖',
     title: '空灵中庭',
     location: '意大利米兰 — 室内设计',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBfj7b_0Jz4Ar8Ozr_pPQ_vFFE9xULNC9suGIYyBFxXk2ep_Lmydu_Pq1N1Hbp6KJ0I_76O3o3bxKPpmME1HL0A8z1O9D0Spakq40_P2HFsHIqmq63UP_4C66GNsPJnCmb2tnkOlQWVLFfhae8IXxs-yPGmScE923jJ9B1SLwsfdyLY0YKyHSIPtEgKN2PTYiSuxBVs5kJlyjVfnkGOhs4HF_-nZcowlNjWEWT2eJ4VGbn9WTYxN_EJG35YG6Mhcj6kr15QL448GP4',
+    image: img7,
   },
   {
     id: '3',
     award: '提名奖',
     title: '巨石住宅',
     location: '冰岛雷克雅未克 — 建筑设计',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAtMoq4YYDVCCNPbrdSuxjnRFW73GsuFgYMi0eHsGUOLJXZLlfm2MVM3PDbGmiPRH5WVr6OnJTXl__KbfxcNVD2Fh566GIrv0EB77WQjGO4FClN_scW6vKalIraeS1e-bOFNyO1gN9sQthk418v6KwNtr8UIaOgNDCK21b43LGMjbKrtwf0OqRGGJmqQcQa8-wjRgfTtU0B-Kp74qyaqyJY2sHx1JfalSLbXt53-BeDo3JSxhyECvVZzurFdz25PpOc0adlO5y1bLw',
+    image: img8,
   },
   {
     id: '4',
     award: '特别提及',
     title: '金色流动',
     location: '阿联酋迪拜 — 公共艺术',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA4NlnCEWPNwRbDQVSzRPO7cFYZOxi412oC58RiImYqu9XwoItsEzUhaDFphG5jzfwKemBHpKJXka6WyOdx7lf2hf1dV-DUCPCWVfXtGygxaSHj6DrDQmHz_9o9-KCx4R29fj1Dj0NlhiuJjosgD2ep4yHc5IETO5dGfmt0J6OJ7heMzeYJB2O3DwOIXo4RhIHJNGBD1AcC9cm1DftzGeRbg42SPAc_AS2oWJid1HJ04hcYWViQ3xLEMbkg5jDu-g_0qvxwjbruINY',
+    image: img9,
   },
 ]
 

@@ -1,24 +1,23 @@
 <template>
-  <div class="bg-[#0a0a0a] text-on-surface font-body-md overflow-x-hidden">
+  <div class="bg-sg-deep-charcoal text-on-surface font-body-md overflow-x-hidden">
     <NavBar />
 
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img
-          ref="parallaxRef"
-          class="w-full h-full object-cover opacity-40 scale-105 parallax-bg"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOo9xWymLkPzP53_OXw5RfhKjoyfHcmqwOJzRYk2FbyhaHF0yEc-rSkNcHEXdnQsXZxs2fBdNkEO1dwXheONOrNj1kKcTDnwjlmHJ0IedZ9kJh-WJ__Z5pJw5BKr_sxhH8RcEzv8UrjAwwhjwM7WMnQqnyTkKWoTudM_kLS5t7leBI-qDxBYUqm4BiWMcrbNezlZGz8J5MliKKV2ZTvYDZw6iT2vFulILMGVAxL7OUwIhAGVHgk5JzGfBME4iBpNZ6eHdBnSU5i_4"
-        />
-        <div class="absolute inset-0 bg-linear-to-b from-transparent via-[#0a0a0a]/50 to-[#0a0a0a]"></div>
+        <img ref="parallaxRef" class="w-full h-full object-cover opacity-40 scale-105 parallax-bg" :src="img1" />
+        <div class="absolute inset-0 bg-linear-to-b from-transparent via-sg-deep-charcoal/50 to-sg-deep-charcoal"></div>
       </div>
       <div class="relative z-10 text-center max-w-4xl px-margin-mobile">
-        <span class="block font-label-sm text-sm uppercase tracking-[0.3em] text-secondary mb-6 reveal-on-scroll">Est. 2010</span>
-        <h1 class="font-display-hero text-[56px] md:text-[96px] text-white mb-8 reveal-on-scroll" style="transition-delay: 200ms;">
+        <span class="block font-label-sm text-sm uppercase tracking-[0.3em] text-secondary mb-6 reveal-on-scroll">Est.
+          2010</span>
+        <h1 class="font-display-hero text-[56px] md:text-[96px] text-white mb-8 reveal-on-scroll"
+          style="transition-delay: 200ms;">
           The Pinnacle of <br />
           <span class="italic text-secondary">Global Design</span>
         </h1>
-        <p class="font-body-md text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto reveal-on-scroll" style="transition-delay: 400ms;">
+        <p class="font-body-md text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto reveal-on-scroll"
+          style="transition-delay: 400ms;">
           艾特奖：连接世界，定义未来。
         </p>
       </div>
@@ -29,7 +28,9 @@
 
     <!-- Narrative Section -->
     <section class="py-section-gap relative">
-      <div class="liquid-gold-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-30"></div>
+      <div
+        class="liquid-gold-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-30">
+      </div>
       <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-12 gap-gutter items-center">
         <div class="col-span-12 lg:col-span-5 reveal-on-scroll">
           <h2 class="font-headline-lg text-[40px] md:text-[56px] mb-8 gold-underline">艾特奖简介</h2>
@@ -39,13 +40,15 @@
             <p>我们致敬那些重新定义空间、光影与材质边界的远见者。每年，来自50多个国家的数千件作品角逐"艾特奖"金奖殊荣。</p>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-6 lg:col-start-7 reveal-on-scroll mt-12 lg:mt-0" style="transition-delay: 300ms;">
+        <div class="col-span-12 lg:col-span-6 lg:col-start-7 reveal-on-scroll mt-12 lg:mt-0"
+          style="transition-delay: 300ms;">
           <div class="relative group">
-            <div class="absolute -inset-4 border-[0.5px] border-midnight-gray group-hover:border-secondary transition-colors duration-500"></div>
+            <div
+              class="absolute -inset-4 border-[0.5px] border-midnight-gray group-hover:border-secondary transition-colors duration-500">
+            </div>
             <img
               class="relative z-10 w-full aspect-4/5 object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBDwBMSrPGTjjFamm1rxNI-usz6hkZqh5dctYjZJhu6AF64H-vokOISg-iB1lcpzytOKqOI_elp_Tx8dZ1yOaaBKVCuls1uxS4gqmKrLhFFIQ-nlrg6XIl-PqBI1CaXb5ZNmH8Wo7HnKOHLxulqPBNOHs2klepafZvz2_H6OcH9fGmbrrhFRJg94xieMvvi-fJnyKzn8-p8Adnfp60NU_ONxkEiaYwY4LgMtlyNf67Td9PZG0qoo3MeMkiwKYeEYI3CWKMiISZWnc"
-            />
+              :src="img2" />
           </div>
         </div>
       </div>
@@ -56,21 +59,21 @@
       <div class="max-w-container-max mx-auto px-margin-desktop">
         <div class="text-center mb-32 reveal-on-scroll">
           <h2 class="font-headline-lg text-[40px] md:text-[56px] mb-4">艾特奖大事记</h2>
-          <p class="font-label-sm text-sm uppercase tracking-widest text-secondary">The Journey of Excellence (2010 - 2021)</p>
+          <p class="font-label-sm text-sm uppercase tracking-widest text-secondary">The Journey of Excellence (2010 -
+            2021)</p>
         </div>
         <div class="relative max-w-4xl mx-auto">
           <div class="absolute left-1/2 top-0 bottom-0 w-[0.5px] timeline-line -translate-x-1/2 hidden md:block"></div>
           <div class="space-y-32">
-            <div
-              v-for="(ms, idx) in milestones"
-              :key="ms.year"
+            <div v-for="(ms, idx) in milestones" :key="ms.year"
               class="relative flex items-center justify-between reveal-on-scroll"
-              :class="{ 'md:flex-row-reverse': idx % 2 !== 0 }"
-            >
-              <div class="w-5/12 text-right pr-12 hidden md:block" :class="{ 'md:text-left md:pl-12 md:pr-0': idx % 2 !== 0 }">
+              :class="{ 'md:flex-row-reverse': idx % 2 !== 0 }">
+              <div class="w-5/12 text-right pr-12 hidden md:block"
+                :class="{ 'md:text-left md:pl-12 md:pr-0': idx % 2 !== 0 }">
                 <span class="font-display-hero text-[56px] text-secondary opacity-30">{{ ms.year }}</span>
               </div>
-              <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-secondary shadow-[0_0_15px_rgba(228,194,133,0.8)] rounded-full z-10 border-4 border-ink-jade hidden md:block"
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-secondary shadow-[0_0_15px_rgba(228,194,133,0.8)] rounded-full z-10 border-4 border-ink-jade hidden md:block"
                 :class="{ 'animate-pulse': ms.year === '2021' }"></div>
               <div class="md:w-5/12" :class="idx % 2 === 0 ? 'md:pl-12' : 'md:pr-12 md:text-right'">
                 <h3 class="font-headline-md text-white mb-2 md:hidden">{{ ms.year }}</h3>
@@ -86,12 +89,8 @@
     <!-- Stats Grid -->
     <section class="py-section-gap relative overflow-hidden">
       <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
-        <div
-          v-for="(stat, idx) in stats"
-          :key="stat.value"
-          class="reveal-on-scroll"
-          :style="{ transitionDelay: idx * 100 + 'ms' }"
-        >
+        <div v-for="(stat, idx) in stats" :key="stat.value" class="reveal-on-scroll"
+          :style="{ transitionDelay: idx * 100 + 'ms' }">
           <p class="font-display-hero text-[56px] text-secondary mb-2">{{ stat.value }}</p>
           <p class="font-label-sm text-sm uppercase tracking-widest text-on-surface-variant">{{ stat.label }}</p>
         </div>
@@ -103,16 +102,12 @@
       <div class="max-w-container-max mx-auto px-margin-desktop text-center">
         <h2 class="font-headline-lg text-[40px] md:text-[56px] mb-12 reveal-on-scroll">加入传承之旅。</h2>
         <div class="flex flex-col md:flex-row items-center justify-center gap-6 reveal-on-scroll">
-          <router-link
-            to="/signup"
-            class="px-12 py-4 bg-secondary text-ink-jade font-label-sm text-sm uppercase tracking-widest font-bold hover:bg-white transition-all duration-300"
-          >
+          <router-link to="/signup"
+            class="px-12 py-4 bg-secondary text-ink-jade font-label-sm text-sm uppercase tracking-widest font-bold hover:bg-white transition-all duration-300">
             立即报名
           </router-link>
-          <router-link
-            to="/winners"
-            class="px-12 py-4 border border-secondary text-secondary font-label-sm text-sm uppercase tracking-widest hover:bg-secondary/10 transition-all duration-300"
-          >
+          <router-link to="/winners"
+            class="px-12 py-4 border border-secondary text-secondary font-label-sm text-sm uppercase tracking-widest hover:bg-secondary/10 transition-all duration-300">
             获奖作品
           </router-link>
         </div>
@@ -127,6 +122,8 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import NavBar from '@/views/components/NavBar.vue'
 import FooterSection from '@/views/components/FooterSection.vue'
+import img1 from "@/assets/12.png"
+import img2 from "@/assets/13.png"
 
 defineOptions({ name: 'IdeaIntro' })
 

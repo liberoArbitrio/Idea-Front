@@ -2,9 +2,12 @@
   <nav
     class="fixed top-0 w-full z-100 flex justify-between items-center px-margin-desktop h-20 glass-nav border-b border-white/5">
     <!-- Logo -->
-    <router-link to="/" class="shrink-0 cursor-pointer">
-      <img :src="logoImg" alt="IDEA-TOPS" class="h-9 md:h-14 max-w-[140px] md:max-w-none w-auto object-contain object-left" />
-    </router-link>
+    <div class="flex items-baseline gap-1.5 shrink-0">
+      <router-link to="/" class="cursor-pointer">
+        <img :src="logoImg" alt="IDEA-TOPS" class="h-9 md:h-14 max-w-[140px] md:max-w-none w-auto object-contain object-left" />
+      </router-link>
+      <span class="gold-gradient-text font-label-xs text-[10px] md:text-xs tracking-wider -ml-0.5">-by高陌</span>
+    </div>
 
     <!-- Desktop Nav Links (纯 CSS hover，和原版一致) -->
     <div class="hidden lg:flex gap-8 items-center">
